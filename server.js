@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs');
-const cors = require('cors');
+const cors = require('cors'); 
 const knex = require('knex');
 
 const register = require('./controllers/register');
@@ -31,7 +31,7 @@ app.use(cors())
  * ENDPOINT FOR ROOT
  */
 app.get('/', (req, res) => {
-    res.send(res.users);
+    res.send('it is working');
 });
 
 /**
